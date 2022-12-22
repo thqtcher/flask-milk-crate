@@ -7,11 +7,7 @@
   ],
   "routes": [
     {
-      "src": "/form",
-      "dest": "/templates/index.html"
-    },
-    {
-      "src": "/process",
+      "src": "/(.*)",
       "dest": "/api/index.py"
     }
   ]
