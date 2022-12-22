@@ -13,7 +13,7 @@ def give_me_recs():
     sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
     # Get the playlist ID
-    playlist_id = "3rnUfkDDn2CUM8fsvz99Zl"
+    playlist_id = "4ZHo1BBIDxrDXcDYc6Xnsj"
     # https://open.spotify.com/playlist/2mHUgJImW4zljkyFgLpCyB?si=19f43d342f204077
     # https://open.spotify.com/playlist/3WcxyS4KauVXjIb03g3v7R?si=39edd4ed1c7449a3
     # Get the tracks in the playlist
