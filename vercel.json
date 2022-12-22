@@ -1,6 +1,10 @@
 {
   "builds": [
     {
+      "src": "api/mc_recommendations.py",
+      "use": "@vercel/python"
+    },
+    {
       "src": "api/index.py",
       "use": "@vercel/python"
     }
