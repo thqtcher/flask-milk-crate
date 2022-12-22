@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "api/mc_recommendations.py",
+      "src": "music/mc_recommendations.py",
       "use": "@vercel/python"
     },
     {
