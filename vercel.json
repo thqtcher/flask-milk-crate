@@ -1,17 +1,17 @@
 {
   "builds": [
     {
-      "src": "music/mc_recommendations.py",
-      "use": "@vercel/python"
-    },
-    {
       "src": "api/index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/form",
+      "dest": "templates/index.html"
+    },
+    {
+      "src": "/process",
       "dest": "api/index.py"
     }
   ]
