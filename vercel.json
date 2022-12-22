@@ -2,7 +2,7 @@
   "builds": [
     {
       "src": "templates/form.html",
-      "dest": "@vercel/static"
+      "use": "@vercel/static"
     },
     {
       "src": "api/index.py",
