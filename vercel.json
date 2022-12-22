@@ -8,11 +8,11 @@
   "routes": [
     {
       "src": "/form",
-      "dest": "templates/form.html"
+      "dest": "/templates/form.html"
     },
     {
       "src": "/process",
-      "dest": "api/index.py"
+      "dest": "/api/index.py"
     }
   ]
 }
