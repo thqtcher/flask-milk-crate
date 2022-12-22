@@ -9,8 +9,8 @@ import random
 def give_me_recs(playlist_id):
 
     # Set up the Spotify client credentials
-    client_id = "b015c81c97d545338ca3ff965ae2505e"
-    client_secret = "a8232b86d78a48c0ae8b3512ffe517f9"
+    client_id = "c1f4309625494c848f3d90c0b3f96813"
+    client_secret = "7b676d5c061c439389d95257530a0a76"
     client_credentials_manager = SpotifyClientCredentials(
         client_id=client_id, client_secret=client_secret
     )
