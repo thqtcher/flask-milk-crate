@@ -7,21 +7,6 @@ app = Flask(__name__)
 def show_form():
     
     return render_template('form.html')
-<<<<<<< HEAD
-"""    
-@app.route('/login')
-def login():
-    client_id = "c1f4309625494c848f3d90c0b3f96813"
-    redirect_uri = "https://flask-milk-crate.vercel.app/form"
-    scope = 'user-read-private user-read-email'
-    authorization_url = f'https://accounts.spotify.com/authorize?client_id={client_id}&response_type=code&redirect_uri={redirect_uri}&scope={scope}'
-    return redirect(authorization_url)
-"""
-=======
-    
-
-
->>>>>>> parent of 2be3623... Update index.py
 
     
 
