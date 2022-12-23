@@ -15,6 +15,10 @@
       "dest": "templates/form.html"
     },
     {
+      "src": "/login",
+      "dest": "api/index.py"
+    },
+    {
       "src": "/process",
       "dest": "api/index.py"
     }
