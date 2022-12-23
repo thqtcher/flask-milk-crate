@@ -1,6 +1,6 @@
 import music.mc_recommendations as mc_recommendations
 from flask import Flask, render_template, request
-from flask-cors import CORS, cross_origin
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 cors = CORS(app)
