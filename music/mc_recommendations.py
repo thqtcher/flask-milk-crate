@@ -42,7 +42,9 @@ def give_me_recs(playlist_id):
 
     # shuffle track ids to combat mass adding songs from same artist/album
     random.shuffle(track_ids)
-
+    
+    if len(track_ids) > 150:
+        random.sample(track_ids, 150)
     # parse through track IDs and generate recommendations on each 5-song slice
     recommended_track_list = []
 
