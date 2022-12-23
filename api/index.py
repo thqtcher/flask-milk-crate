@@ -15,7 +15,7 @@ def show_form():
     
 
 
-@app.route('/process', methods=['POST'])
+@app.route('/process', methods=['POST', 'GET'])
 @cross_origin()
 def process_input():
     #print("here")
