@@ -18,8 +18,8 @@ def show_form():
 @app.route('/process', methods=['POST'])
 @cross_origin()
 def process_input():
-    print("here")
-    print(request.form)
+    #print("here")
+    #print(request.form)
     input_value = request.form['input']
     
     parts = input_value.split('/')
