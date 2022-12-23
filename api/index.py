@@ -1,5 +1,5 @@
 import music.mc_recommendations as mc_recommendations
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
@@ -30,7 +30,7 @@ def process_input():
     
 
     results = mc_recommendations.give_me_recs(input_value)
-    df_json = jsonify(results)
+    df_json = results.to_json()
     #print(len(df_json))
     return df_json
 
