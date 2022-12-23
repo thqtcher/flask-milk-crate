@@ -2,7 +2,7 @@ import mc_recommendations as mc_recommendations
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
-
+#revert
 @app.route('/form')
 def show_form():
     
