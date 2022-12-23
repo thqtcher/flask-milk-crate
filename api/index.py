@@ -1,9 +1,13 @@
 import music.mc_recommendations as mc_recommendations
 from flask import Flask, render_template, request
+from flask-cors import CORS, cross_origin
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADER'] = 'Content-Type'
 #revert
 @app.route('/form')
+@cross_origin()
 def show_form():
     
     return render_template('form.html')
@@ -12,6 +16,7 @@ def show_form():
 
 
 @app.route('/process', methods=['POST'])
+@cross_origin()
 def process_input():
     input_value = request.form['input']
     parts = input_value.split('/')
