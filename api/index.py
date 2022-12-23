@@ -7,7 +7,7 @@ app = Flask(__name__)
 def show_form():
     
     return render_template('form.html')
-    
+"""    
 @app.route('/login')
 def login():
     client_id = "c1f4309625494c848f3d90c0b3f96813"
@@ -15,7 +15,7 @@ def login():
     scope = 'user-read-private user-read-email'
     authorization_url = f'https://accounts.spotify.com/authorize?client_id={client_id}&response_type=code&redirect_uri={redirect_uri}&scope={scope}'
     return redirect(authorization_url)
-
+"""
 
     
 @app.route('/process', methods=['POST'])
