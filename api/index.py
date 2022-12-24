@@ -18,20 +18,20 @@ def show_form():
 @app.route('/process', methods=['POST', 'GET'])
 @cross_origin()
 def process_input():
-    #print("here")
-    #print(request.form)
-    input_value = request.form['input']
     
+
+    input_value = request.form['input']
+    #the_string = input_value["url"]
     parts = input_value.split('/')
     playlist_id = parts[-1]
     parts = playlist_id.split('?')
     playlist_id = parts[0]
 
-    
+
 
     results = mc_recommendations.give_me_recs(input_value)
     df_json = results.to_json()
-    #print(len(df_json))
+    #print(df_json)
     return df_json
 
 
